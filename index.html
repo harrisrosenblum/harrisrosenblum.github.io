@@ -1,327 +1,65 @@
-<!DOCTYPE html>
+
 <html>
 <head>
-<title>Harris Rosenblum Home</title>
+<title>harris's cool site</title>
 <style>
-    a{
-        color:black;
-        text-decoration: none;
+    body {background: rgb(82,58,68);
+          background: linear-gradient(90deg, rgba(250, 100, 100,1) 0%, rgba(132,159,79,1) 100%);}
+    div {background: background: rgb(243,255,0);
+        background: linear-gradient(45deg, rgba(243,255,0,1) 0%, rgba(120,120,120,1) 100%);
+        display: inline-block;
+        color: rgb(255, 0, 0);
+        width: 50%;    
+        padding: 10px;
+        margin: 10px;
     }
-    body{
-        font-family: arial;
-         background-image: linear-gradient(to right , pink, yellow,blue);
+    button {
+        background: chocolate;
+        color: rgb(0,255, 0);
+        padding: 5px;
+        margin: 10px;
+        border: 5px;
+        border-style: groove;
+        border-bottom-color: orangered;
+        border-left-color: forestgreen;
+        border-top-color: yellow;
+        border-right-color: blue
     }
-    
-    #title{
+    img {
+        position: absolute;
+        width: 70%;
+        left: 25%;
+        padding: 10px;
+        margin: 10px;
+        border: 10px;
+        border-style: double;
+        border-color: rgb(200,255,0)
+    }
+    a {
+        color: rgb(0, 255, 0);
+    }
+    #steven {
+        position: absolute;
         
-        top:10px;
+        width: 20%;
+        left: 2%;
+        top: 40%;
+        padding: 10px;
         margin: 10px;
-        padding: 10px;
-         z-index:2;
-        
+        border: 10px;
     }
-    #statement{
-        position: absolute;
-        top:0px;
-        left:90px;
-        text-align:center;
-        margin: 10px;
-        border: 10px ridge orange;
-        padding: 10px;
-        background-color:hotpink;
-         z-index:2;
-    }
-    
-    #ceramics{
-        position: absolute;
-        top:0px;
-        left:200px;
-        float:left;
-        text-align:center;
-        margin: 10px;
-        border: 10px ridge green;
-        padding: 10px;
-        background-color:lemonchiffon;
-         z-index:2;
-    }
-    #puredata{
-        position: absolute;
-        top:0px;
-        left:304px;
-        text-align: center;
-        margin: 10px;
-        border: 10px ridge pink;
-        padding: 10px;
-        background-color: yellow;
-         z-index:2;
-        
-    }
-     #resume{
-        position: absolute;
-        top:58px;
-        left:0px;
-        text-align: center;
-        margin: 10px;
-        border: 10px ridge blue;
-        padding: 10px;
-        background-color: skyblue;
-          z-index:2;
-    }
-         #contact{
-        position: absolute;
-        top:58px;
-        left:93px;
-        text-align: center;
-        margin: 10px;
-        border: 10px ridge white;
-        padding: 10px;
-        background-color: slategray;
-            z-index:2;
-    }
-    #about{
-        position:absolute;
-        top: 80%;
-        left: 150px;
-        width: 400px;
-        background-color: blanchedalmond;
-        padding: 10px;
-        border:double;
-    }
-    #glrp{
-        position:absolute;
-        top: 50px;
-        left: 650px;
-        height:700px;
-    }
-    #portrait{
-        position:absolute;
-        top: 500px;
-        left: 10px;
-        height: 120px;
-    }
-           .drawed{
-            top: 260px;
-            left: 320px;
-            width:180px;
-            height:180px;
-            border-radius: 50%;
-            position:absolute;
-            color: black;
-            background-color:currentColor;
-            box-shadow: 0px 5px 10px  blue, 0px -5px 20px purple, 0px 10px 30px red, 0px -10px 40px orange, 0px 20px 50px  yellow, 0px -20px 60px  green,0px 30px 70px blue;
-            transition: transform 1000s ease;
-                z-index:2;
-        }
-        .drawed:hover {
-  transform: rotate3d(300,300,300,400turn);
-        }
-        .status{
-            top: 200px;
-            left: 200px;
-            width:180px;
-            height:180px;
-            border-radius: 50%;
-            position:absolute;
-            color: black;
-            background-color:currentColor;
-             z-index:2;
-        }
-    #drawingapp{
-        position:absolute;
-        height:100%;
-        width:100%;
-        z-index:1;
-    }
-    #mycanvas{
-        position:absolute;
-        top: 150px;
-        left: 20px;
-        width: 180px;
-         z-index:2;
-    }
- 
-    #deco1{
-        position:absolute;
-        top: 100px;
-        left:1200px;
-        height: 300px;
-        width: 200px;
-        background-color: rgb(250,235,170)
-    }
-        #deco2{
-        position:fixed;
-        top: 110px;
-        left:1210px;
-        height: 270px;
-        width: 170px;
-        background-color: rgb(245,215,140)
-    }
-        #deco3{
-        position:absolute;
-        top: 120px;
-        left:1220px;
-        height: 240px;
-        width: 140px;
-        background-color: rgb(240,195,110)
-    }
-        #deco4{
-        position:fixed;
-        top: 130px;
-        left:1230px;
-        height: 210px;
-        width: 110px;
-        background-color: rgb(235,175,80);
-            
-    }
-       #deco5{
-        position:absolute;
-        top: 140px;
-        left:1240px;
-        height: 180px;
-        width: 80px;
-        background-color: pink;
-            
-    }
-    a{
-        text-decoration: none;
-        color: black;
-    }
-</style>
+    </style>
 </head>
 <body>
-    <canvas id="drawingapp"></canvas>
-    <img src="https://i.imgur.com/AxiVqm7.jpg" id="portrait">
-       <img src="https://i.imgur.com/BWzyvdY.png" id=glrp>
-    <p><span id="title">Harris <br> Rosenblum</span><a id="statement" href="https://harrisrosenblum.github.io/statement.html"> statement</a><a id="ceramics" href="https://harrisrosenblum.github.io/ceramics.html"> ceramics</a><a id="puredata" href="https://github.com/harrisrosenblum/puredataprojects"> puredata</a><br><a id="resume" href="https://harrisrosenblum.github.io/resume.html"> resume</a><a id="contact" href="https://harrisrosenblum.github.io/contact.html">contact</a></p>
+    <div>My name is Harris Rosenblum and I am a sculptor and researcher based in Northeast Ohio. My email is harris.m.rosenblum@gmail.com and my phone number is 3034063038. I love goblins, craft, and the internet.</div><br>
+    <button>work</button>
+    <button>research</button>
+    <button><a href= https://github.com/harrisrosenblum/harrisrosenblum.github.io/files/7281170/2021fallresume.Rosenblum.pdf>cv</a></button>
+    <button>statement</button>
+    <br>
+    <img src=https://user-images.githubusercontent.com/45798088/135918291-28c4db0d-5967-4d1b-b118-2d8fd5385719.jpg>
+    <img src= https://user-images.githubusercontent.com/45798088/135920150-9bd3ac79-71b9-4e5c-b8f3-f0cff3f01f06.png>
+    <img id=steven src=https://user-images.githubusercontent.com/45798088/135930295-9fa9f9fc-66da-4e06-a496-31d576621d99.gif>
     
-    <div id="about">I am an interdisciplinary artist who works mainly with ceramic material and software.  My work is focused on representing unintuitive layers of experience in an intuitive way to create empathy for abstract objects, events, and places. I currently live and work in Northeast Ohio.</div>
-    <div id="deco1"></div><div id="deco2"></div><div id="deco3"></div><div id="deco4"></div><div id="deco5"></div><div class="drawed">//&#9728;</div>
-    <div><canvas id="mycanvas"></canvas></div>
-    
-     <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
- 
- <script>
-     
-    var sketchProc = function(processingInstance) {
-     with (processingInstance) {
-        size(200, 200); 
-        frameRate(15);
-         var xpoints = [];
-         var ypoints = [];
-         var pointnum = 0; 
-         var colorwalk =[];
-         var lineNum = 0;
-         var pointo = 0;
-         var ziem = 10;
-         var i = 0;
-         noFill();
-         while(pointnum < 100) {
-             xpoints[pointnum]= random(0, 10);
-             ypoints[pointnum]= random(0, 10);
-             pointnum++;
-        }
-        
-         draw = function() {
-    
-            
-            background(0,0,0,0);
-            stroke(0,0,0);
-            strokeWeight(1);
-            for(i = 0;i<100; i++){
-                    if (xpoints[i%(ziem*ziem)]>=10){
-                        xpoints[i%(ziem*ziem)] = (xpoints[i%(ziem*ziem)]-1);
-                    }
-                    else if (xpoints[i%(ziem*ziem)]<=0){
-                        xpoints[i%(ziem*ziem)] = (xpoints[i%(ziem*ziem)]+1);
-                    }
-                    else{
-                        xpoints[i%(ziem*ziem)] = (xpoints[i%(ziem*ziem)] + random(0,2)-1);
-                    }
-                    if (ypoints[i%(ziem*ziem)]>=10){
-                        ypoints[i%(ziem*ziem)] = (ypoints[i%(ziem*ziem)]-1);
-                    }
-                    else if (ypoints[i%(ziem*ziem)]<=0){
-                        ypoints[i%(ziem*ziem)] = (ypoints[i%(ziem*ziem)]+1);
-                    }
-                    else{
-                        ypoints[i%(ziem*ziem)] = (ypoints[i%(ziem*ziem)] + random(0,2)-1);
-                    }
-            }
-            for(lineNum= 0; lineNum<ziem;lineNum++) {
-                beginShape();
-                for(pointo=0;pointo<ziem;pointo++) {
-                    curveVertex(xpoints[pointo+lineNum*ziem]+(1+lineNum)*(width/(ziem+2)), height/(ziem-1)*pointo-(height/40));
-                }
-                endShape();
-                beginShape();
-            for(pointo=0;pointo<ziem;pointo++) {
-                curveVertex(width/(ziem-1)*pointo-(width/40),ypoints[pointo+lineNum*ziem]+(1+lineNum)*(height/(ziem+2)));
-            }
-            endShape();
-            }
-         }
-    }};
-    
-     
-     
-var drawingapp = function(goofus) {
-     with (goofus) {
-        size(outerWidth, outerHeight); 
-        frameRate(60);     
-     
-var xSize= 10;
-var ySize= 10;
-strokeWeight(3);
-frameRate(100);
-background(0,0,0,0);
-
-draw = function() {
-
-mouseMoved= function(){
-    
-    
-    if (xSize<=10){
-             xSize = xSize+1;
-         }
-    else if (xSize>=50){
-             xSize = xSize-1;
-         }
-    else{
-             xSize = xSize + random(0,6)-3;
-         }
-        if (ySize<=10){
-             ySize = ySize+1;
-         }
-    else if (ySize>=50){
-             ySize = ySize-1;
-         }
-    else{
-             ySize = ySize + random(0,4)-2;
-         }
-    
-    
-    
-    
-    
-    stroke(random(0,255),random(0,255),random(0,255));
-fill(random(0,255), random(0,255), random(0,255));
-    ellipse(mouseX, mouseY, xSize, ySize);
-    
-};
-mousePressed = function(){
-clear();
-};
-};
-     }};
-
-    var canvas = document.getElementById("mycanvas"); 
-    var processingInstance = new Processing(canvas, sketchProc); 
-     canvas
-     var appe = document.getElementById('drawingapp');
-     var goofus = new Processing(appe, drawingapp); 
-     appe
- </script>
- 
-
-</body>
+    </body>
 </html>
